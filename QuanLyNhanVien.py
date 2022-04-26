@@ -22,7 +22,15 @@ class QuanLyNhanVien:
         name = input("Nhap ten nhan vien: ")
         nv = NhanVien(nvId, name)
         self.listNhanVien.append(nv)
-
+        
+    def findByID(self, ID):
+        searchResult = None
+        if (self.soLuongNhanVien() > 0):
+            for nv in self.listNhanVien:
+                if (nv._id == ID):
+                    searchResult = nv
+        return searchResult
+ 
     def updateNhanVien(self, ID):
         # Tìm kiếm nhân viên trong danh sách listNhanVien
         nv:NhanVien = self.findByID(ID)
