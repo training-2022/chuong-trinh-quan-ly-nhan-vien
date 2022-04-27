@@ -1,5 +1,5 @@
 import math
-from NhanVien import *
+from NhanVien import NhanVien
 
 class QuanLyNhanVien:
     listNhanVien = []
