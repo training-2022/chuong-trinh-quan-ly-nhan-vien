@@ -1,4 +1,4 @@
-from QuanLyNhanVien import *
+from QuanLyNhanVien import QuanLyNhanVien
 # khởi tạo một đối tượng QuanLyNhanVien để quản lý Nhân viên
 qlnv = QuanLyNhanVien()
 while (1==1):
